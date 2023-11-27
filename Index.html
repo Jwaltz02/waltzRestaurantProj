@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Waltz - Fine Foods</title>
+
+	<link rel="stylesheet" href="homepage.css" />
+	<script defer src="homepageButtons.js"></script>
+	<script defer src="homepageReserveButtons.js"></script>
+</head>
+<body>
+  <header>
+		<div>
+			<nav>
+				<div>
+					<img class="left-rose" src="https://tmpfiles.nohat.cc/m2i8H7N4G6A0N4d3.png"/>
+					<label name="Homepage">
+						<a class="waltz-nav" href="http://127.0.0.1:5501/Index.html">WALTZ</a>
+					<label class="general-directories"></label>
+						<a class="info" href="#btn_food">MENU</a>
+						<a class="info" id="order-online">ORDER ONLINE</a>
+						<a class="info" href="#contact-hours">CONTACT & HOURS</a>
+					</label>
+					<ul>
+						<li><a href="https://www.instagram.com/instagram/" target=”_blank”><img id="instagram" name="Instagram"
+							src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black-circle.png"/></a>
+						</li>
+						<li><a href="https://twitter.com/" target=”_blank”><img id="twitter" name="Twitter"
+							src="https://freelogopng.com/images/all_img/1690643640twitter-x-icon-png.png"/></a>
+						</li>
+						<li><a href="https://design.facebook.com/stories/redefining-facebooks-brand-identity/" target=”_blank”><img id="facebook" name="Facebook"
+							src="https://cdn.icon-icons.com/icons2/3398/PNG/512/circle_facebook_logo_icon_214753.png"/></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+  </header>
+  <main>
+		<div class="reservation-section">
+			<div class="reservation-btn-container" id="reserve_btn_container">
+				<div class="reservation-btn-container-background"></div>
+				<button class="reservation-btn" id="reservation_btn">Make A Reservation</button>
+			</div>
+			<form method="post" target=”_blank”>
+				<div class="reservation-form" id="reservation_form">
+					<label for="reservation">
+						<select id="reservation" name="reservation" required>
+							<option value="1">1 person</option>
+							<option value="2" selected>2 people</option>
+							<option value="3">3 people</option>
+							<option value="4">4 people</option>
+							<option value="5">5+ people</option>
+						</select>
+						<input type="date" name="date" required/>
+						<input type="time" name="time" required/>
+						<input type="submit" name="submit" value="submit" id="submit"/>
+						<button type="button" class="reservation-close" id="reservation_close">&times;</button>
+					</label>
+				</div>
+			</form>
+		</div>
+		<section class="menu-items">
+			<div class="menu">
+				<div class="menu-tabs">
+					<button id="btn_food">Food</button>
+					<button id="btn_dessert">Dessert</button>
+					<button id="btn_beverage">Beverages</button>
+				</div>
+				<div class="food-menu">
+					<div class="starters-menu" id="starters_menu">
+						<div class="food-list-LS">
+							<h1><i>Starters</i></h1>
+							<p><b>crispy stuffed olives | 14</b></p>
+							<p class="food-item-descrip-LS">persian feta + za'atar + preserved lemon</p>
+							<p><b>tuna tartare | 24</b></p>
+							<p class="food-item-descrip-LS">citrus chili tahini + watermelon + avocado + soy + cilantro + lavash</p>
+							<p><b>beef tartare | 21</b></p>
+							<p class="food-item-descrip-LS">toum + mint + capers + sumac + kohlrabi + schug + pickled chili + sesame lavash</p>
+							<p><b>labneh | 18</b></p>
+							<p class="food-item-descrip-LS">pistachio + sumac + roasted beets + barbari bread</p>
+							<p><b>turkish manti dumplings | 21</b></p>
+							<p class="food-item-descrip-LS">eggplant + yogurt sauce + date molasses</p>
+							<p><b>white tiger shrimp | 26</b></p>
+							<p class="food-item-descrip-LS">persian lime + tamarind + chili + toum + coriander</p>
+							<p><b>crispy shrimp | 21</b></p>
+							<p class="food-item-descrip-LS">schug aioli + sumac + lime</p>
+						</div>
+						<div class="food-list-RS">
+							<p><b>halloumi | 18</b></p>
+							<p class="food-item-descrip-RS">wild flower honey + dukkah + pistachio</p>
+							<p><b>lamb ribs | 22</b></p>
+							<p class="food-item-descrip-RS">persian feta + za'atar + preserved lemon</p>
+							<p><b>fried eggplant | 17</b></p>
+							<p class="food-item-descrip-RS">honey + baharat + yogurt + cilantro + sesame</p>
+							<p><b>octopus | 30</b></p>
+							<p class="food-item-descrip-LS">harissa romesco + sumac + cilantro + extra virgin olive oil</p>
+							<p><b>pear & arugula | 18</b></p>
+							<p class="food-item-descrip-LS">castelfranco + green grapes + candied almonds + cumin & preserved lemon vinaigrette</p>
+							<p><b>truffle sunchoke | 21</b></p>
+							<p class="food-item-descrip-LS">baby gem + apple + watercress + truffled sheep cheese + truffle vinaigrette</p>
+						</div>
+					</div>
+          <div class="mains-menu" id="mains_menu">
+						<div class="food-list-LS">
+							<h1><i>Mains</i></h1>
+							<p><b>wagyu lahmeh | 24</b></p>
+							<p class="food-item-descrip-LS">spicy toum + urfa chili + parsley + sumac onion</p>
+							<p><b>black truffle & cheese | 22</b></p>
+							<p class="food-item-descrip-LS">mozzarella + feta + akawi + oregano + black truffle</p>
+							<p><b>lamb | 23</b></p>
+							<p class="food-item-descrip-LS">fermented tomato sauce + sumac red onion + pickled turkish peppers</p>
+							<p><b>short rib kebab | 38</b></p>
+							<p class="food-item-descrip-LS">chemen + truffle yogurt + pine nut dukkah + mint</p>
+							<p><b>17oz dry aged bone-in ribeye | 85</b></p>
+							<p class="food-item-descrip-LS">charred green onion chimichurri + toum + green peppercorn jus + turkish peppers</p>
+							<p><b>lamb shoulder | 35</b></p>
+							<p class="food-item-descrip-LS">raz al hanout + pomegranate molasses + pita + sumac red onion + crispy chickpeas + schug + raita + pickles</p>
+						</div>
+						<div class="food-list-RS">
+							<p><b>middle eastern fried chicken | 38</b></p>
+							<p class="food-item-descrip-RS">toum + red schug hot honey + pickles + za'atar + smoked paprika</p>
+							<p><b>lamb ribs | 22</b></p>
+							<p class="food-item-descrip-RS">persian feta + za'atar + preserved lemon</p>
+							<p><b>roast half chicken | 42</b></p>
+							<p class="food-item-descrip-RS">endive + orange + fennel + dates + middle eastern spice</p>
+							<p><b>stuffed eggplant | 28</b></p>
+							<p class="food-item-descrip-LS">harissa & turkish pepper relish + pine nuts + olives + urfa chili + parmigiano</p>
+							<p><b>wagyu beef kofta | 30</b></p>
+							<p class="food-item-descrip-LS">green chili + tomatillo + peas + mint + dill + crispy shallot + toum</p>
+							<p><b>halibut | 47</b></p>
+							<p class="food-item-descrip-LS">sabzi vichyssoise + artichoke pistachio chermoula</p>
+							<p><b>BBQ beef | 38</b></p>
+							<p class="food-item-descrip-LS">two seasoned BBQ beef skewers + side of velvety hummus.</p>
+						</div>
+					</div>
+					<div class="dessert-menu" id="dessert_menu">
+						<div class="dessert-list-LS">
+							<h1><i>Signature Favorites</i></h1>
+							<p><b>chocolate olive oil cake | 14</b></p>
+							<p class="dessert-item-descrip-LS">almonds + medjool dates + tahini chantilly</p>
+							<p><b>pavlova | 14</b></p>
+							<p class="dessert-item-descrip-LS">cardmom + strawberry sumac compote + blood orange curd</p>
+							<p><b>seasonal ice cream and sorbet | 8</b></p>
+							<p class="dessert-item-descrip-LS">single scoop</p>
+							<p><b>labneh cheesecake | 16</b></p>
+							<p class="dessert-item-descrip-LS">graham crust + figs, pomegranate molasses + coconut</p>
+						</div>
+						<div class="dessert-list-RS">
+							<p><b>rolled baklava | 20</b></p>
+							<p class="dessert-item-descrip-RS">pistachios + orange blossom honey + white chocolate</p>
+							<p><b>gelato | 14</b></p>
+							<p class="dessert-item-descrip-RS">two scoops of your choice: orange blossom, pistachio, chocolate, or mango sorbet</p>
+							<p><b>cookies | 16</b></p>
+							<p class="dessert-item-descrip-RS">assort of freshly baked butter cookies.</p>
+						</div>
+					</div>
+					<div class="beverage-menu" id="beverage_menu">
+						<div class="non-alcoholic-menu" id="non_alcoholic_menu">
+							<div class="beverage-list-LS">
+								<h1><i>Non-alcoholic</i></h1>
+								<p><b>verbena bliss | 11</b></p>
+								<p class="beverage-item-descrip-LS">lemon + peach nectar + verbena tea + ginger ale</p>
+								<p><b>temple breeze | 12</b></p>
+								<p class="beverage-item-descrip-LS">orange + lemon + pomegranate + rose water + sprite</p>
+								<p><b>fields forever | 10</b></p>
+								<p class="beverage-item-descrip-LS">strawberry + cucumber + celery + lime + agave + soda water</p>
+								<p><b>soda can | 3</b></p>
+								<p class="beverage-item-descrip-LS">gingerale + orange crush + coke + sprite + root beer</p>
+								<p><b>barbican | 4</b></p>
+								<p class="beverage-item-descrip-LS">bottled non-alcoholic malt beverage</p>
+								<div class="special-box">
+									<h1 class="specials-title"><i>Specials</i></h1>
+									<p><b>edgeware road | 11</b></p>
+									<p class="beverage-item-descrip-LS">bombay east gin + lemon + verbena tea</p>
+									<p><b>habibi marguerite | 13</b></p>
+									<p class="beverage-item-descrip-LS">patron silver tequila + barberry spiced syrup + strawberry infused black tea</p>
+								</div>
+							</div>
+						</div>
+						<div class="alcohol-menu" id="alcohol_menu">
+							<div class="alc-list-LS">
+								<h1><i>Classic Cocktails</i></h1>
+								<p><b>nightingale sour | 18</b></p>
+								<p class="beverage-item-descrip-LS">ketel one botanical peach & orange blossom + lillet blanc + licor 43 + ginger + lemon + egg white + vanilla bitters</p>
+								<p><b>rose gulab | 17</b></p>
+								<p class="beverage-item-descrip-LS">grey goose vodka + dillon's rose gin + rose pomegranate + lemon</p>
+								<p><b>ankara elixir | 17</b></p>
+								<p class="beverage-item-descrip-LS">patron silver + amaro montenegro + espresso + turkish coffee syrup</p>
+								<p><b>marrakesh garden | 16</b></p>
+								<p class="beverage-item-descrip-LS">tanqueray gin + cold pressed cucumber & celery juice + mint syrup + lime</p>
+								<p><b>citrus spice g&t | 16</b></p>
+								<p class="beverage-item-descrip-LS">tanqueray no.10 gin + lime + grapefruit + mint + star anise + fever tree tonic</p>
+							</div>
+							<div class="beverage-list-RS">
+								<h1><i>Wine</i></h1>
+								<p><b>maison ventenac 'aure' | 16</b></p>
+								<p class="beverage-item-descrip-RS">grenache blend</p>
+								<p><b>tarlant (champagne) | 25</b></p>
+								<p class="beverage-item-descrip-RS">oeuilly, nv</p>
+								<p><b>andre aubert 'le devoy' | 17</b></p>
+								<p class="beverage-item-descrip-RS">grenache blend + grignan-les-adhémar, france 2020</p>
+								<p><b>château guilhelm 'pot de vin' (bottle) | 70</b></p>
+								<p class="beverage-item-descrip-RS">pays d'oc, france 2021</p>
+								<div class="beer-box">
+									<h1 class="beer-title"><i>Beer</i></h1>
+									<p><b>Mill Street Brewery's Tankhouse | 9</b></p>
+									<p class="beverage-item-descrip-LS">(355ml bottle)</p>
+									<p><b>creemor barrel-aged urbock | 32</b></p>
+									<p class="beverage-item-descrip-LS">(750ml bottle)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="about-section">
+			<div class="contact-hours-location" id="contact-hours">
+				<div class="contact-hours">
+					<div class="contact">
+						<h1>Contact</h1>
+						<p>141 Spadina Ave. Toronto ON, M5V 1X3</p>
+						<p>6479925792</p>
+						<p>info@waltzdowntown.com</p>
+						<button id="btn-contact-hours"><b>Subscribe To Our Mailing List</b></button>
+					</div>
+					<div class="hours">
+						<h1>Hours</h1>
+						<p>Monday-Thursday: 11:00am - 9:00pm</p>
+						<p>Friday-Sunday: 10:00am - 11:00pm</p>
+						<button id="btn-contact-hours"><b>See Other Locations</b></button>
+					</div>
+				</div>
+				<div class="location">
+					<iframe id="myiframe" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d92323.82118799571!2d-79.42025340442932!3d43.68728
+					080479963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x89d4cb34d7abebef%3A0x1a38d8a3044a47c0!2sDundas%20Square%2C%20Toronto
+					%2C%20ON!3m2!1d43.6559119!2d-79.37975589999999!4m5!1s0x882b357a79472b19%3A0xdc5bebc37ca3cfe4!2sNobu%20Hotel%20Toronto%2C%20Mercer%20Street
+					%2C%20Old%20Toronto%2C%20Toronto%2C%20ON%2C%20Canada!3m2!1d43.6455013!2d-79.3909453!5e0!3m2!1sen!2sca!4v1701027262899!5m2!1sen!2sca"
+					width="100%" height="98.5%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,481 @@
+/* 1 */
+/* Navigation bar of homepage */
+
+.waltz-nav {
+    font-family: cursive;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    display: inline-block;
+}
+
+label a {
+    color: black;
+    text-decoration: underline black;
+}
+
+label a:hover {
+    height: 32px;
+    color: rgb(141, 96, 12);
+}
+
+.left-rose {
+    width: 35px;
+    height: 50px;
+    padding-top: 4px;
+    padding-left: 20px;
+    float: left; /* keeping rose logo on left-side of page */
+}
+
+.info {
+    padding-left: 50px;
+}
+
+.general-directories {
+    margin-left: 18%;
+}
+
+.right-rose {
+    width: 40px;
+    height: 50px;
+    padding-top: 4px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#instagram {
+    width: 30px;
+    height: 22px;
+    padding-top: 2px;
+}
+
+#instagram:hover {
+    height: 32px;
+    width: 40px;
+}
+
+#twitter {
+    width: 20px;
+    height: 20px;
+    display: block;
+    padding-top: 3px;
+}
+
+#twitter:hover {
+    height: 30px;
+    width: 30px;
+}
+
+#facebook {
+    width: 24px;
+    height: 24px;
+    display: block;
+    padding-top: 1px;
+}
+
+#facebook:hover {
+    height: 34px;
+    width: 34px;
+}
+
+nav li {
+    padding-left: 15px;
+    float: left;
+}
+
+nav ul {
+    float: right; /* to bring icon links to the top so that it's inline with header */
+    list-style: none; /* removes dots beeside list elements */
+    padding-right: 30px;
+}
+
+header {
+    background-color: rgb(227, 227, 204);
+    height: 50px;
+    box-shadow: 0 1px 3px rgb(164, 164, 123);
+    padding-bottom: 7px;
+    overflow: hidden; /* Ensures nav elements dont appear on another line when window shrinks */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1; /* Placing header above all content and fixed to the top of page */
+}
+
+/* 2 */
+/* For the background pic (restaurant dining area), the button for the reservation and the form that appears after the reservation button is clicked */
+
+body { /* Ensures that background border of header reaches top and side edges of webpage */
+    margin: 0px;
+    padding: 0px;
+}
+
+.reservation-section { /* container for the background pic of the restaurant and the reservation section */
+    background: url("//images.squarespace-cdn.com/content/v1/55fd5561e4b0154e882b6538/fc9bf42c-1476-4670-80c0-8afab2e6cf61/Opheem+Lounge+for+Aktar+Islam.jpg;");
+    margin-top: 57px; /* Image is placed below header */
+    overflow: hidden;
+    min-height: 700px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reservation-btn-container-background { /* gives a translucent background fot he main button container */
+    background:#90746d;
+    opacity: 35%;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -83px;
+}
+
+.reservation-btn-container { /* main container that contains the reservation button */
+    height: 130px;
+    top: 280px;
+    position: relative;
+    border-radius: 5px;
+    width: 280px;
+    left: 50%;
+    transform: translate(-50%, 0); /* This moves the div 50% to the left from it's current position */
+}
+
+.reservation-btn {
+    font-family: Times;
+    font-size: 18px;
+    background:rgb(145, 117, 110);
+    background-color: rgba(145, 117, 110, 0.65);
+    color: rgb(250, 246, 246);
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(229, 229, 210);
+    width: 15vw;
+    transition:cubic-bezier(0.19, 1, 0.22, 1); 
+    outline: none;
+    width: fit-content;
+    margin-left: 20.5%;
+    position: relative;
+}
+
+.reservation-form {
+    position: relative;
+    height: 50px;
+    top: 330px;
+    left: 30%;
+    width: 57%;
+}
+
+label[for="reservation"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#reservation {
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    width: 140px;
+    min-height: 48px;
+}
+
+input[type="date"] {
+    font-size: 17px;
+    padding: 11px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: 118px;
+    text-align: center;
+}
+
+input[type="time"] {
+    font-size: 17px;
+    padding: 9px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: 115px;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    padding: 11px;
+    width: 110px;
+    font-family:'Times New Roman', Times, serif;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: inset 50vw 0 0 0 rgb(194, 40, 2);
+}
+
+.reservation-text:hover {
+    box-shadow: inset 50vw 0 0 0 rgba(145, 116, 109, 0.65);
+}
+
+.reservation-close {
+    margin-left: 10px;
+    height: 25px;
+}
+
+/* 3 */
+/* For the section that includes the restaurant's food, beverage, and dessert menus */
+
+    /* For the buttons that allow the user to navigate through menus */
+.menu-tabs {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.menu-tabs button {
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: rgb(227, 227, 204);
+    width: 200px;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.menu-tabs button:hover {
+    box-shadow: inset 50vw 0 0 0 rgb(231, 116, 16);
+}
+
+.menu-tabs button:focus {
+    box-shadow: inset 50vw 0 0 0 rgb(231, 116, 16);
+}
+
+    /* For the menu background pic, and the div containers that hold the menu items */
+
+.menu {
+    background-image: url(https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-129599.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1700352000&semt=ais);
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.food-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.starters-menu, .mains-menu {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    column-gap: 40px;
+}
+
+.starters-menu, .mains-menu {
+    color: rgb(63, 114, 84);
+}
+
+.starters-menu h1, .mains-menu h1 {
+    color: orange;
+}
+
+.food-list-LS {
+    width: 260px;
+}
+
+.food-list-RS {
+    padding-top: 50px;
+    width: 265px;
+}
+
+.food-item-descrip-LS, .food-item-descrip-RS {
+    margin-top: -15px;
+}
+
+.dessert-menu{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    width: auto;
+    height: auto;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dessert-menu h1 {
+    color: orange;
+}
+
+.dessert-menu p {
+    color: rgb(63, 114, 84);
+}
+
+.dessert-list-LS {
+    width: 350px;
+}
+
+.dessert-list-RS {
+    width: 350px;
+    padding-top: 50px;
+}
+
+.dessert-item-descrip-RS, .dessert-item-descrip-LS {
+    margin-top: -15px;
+}
+
+.beverage-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    column-gap: 90px;
+    color: rgb(63, 114, 84);
+}
+
+.alcohol-menu, .non-alcoholic-menu {
+    background-color: white;
+}
+
+.non-alcoholic-menu {
+    width: auto;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.non-alcoholic-menu h1, .alcohol-menu h1{
+    color: orange;
+}
+
+.special-box {
+    border: solid rgb(63, 114, 84);
+    height: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.beer-box {
+    border: solid rgb(63, 114, 84);
+    height: 170px;
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+.specials-title, .beer-title {
+    margin-top: 8px;
+}
+
+.alcohol-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 90px;
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 28px;
+    margin-bottom: 65px;
+}
+
+.beverage-list-LS {
+    width: 340px;
+    padding-left: 30px;
+}
+
+.beverage-item-descrip-LS, .beverage-item-descrip-RS {
+    margin-top: -15px;
+}
+
+.alc-list-LS {
+    width: 300px;
+    height: auto;
+}
+
+.beverage-item-descrip-RS {
+    width: 300px;
+    height: auto;
+}
+
+/* 5 */
+/* For the bottom section of the webpage that contains the restaurant info such as contact, hours, and location */
+
+.contact-hours-location {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210825/pngtree-textured-smudge-abstract-retro-dark-brown-background-image_767931.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-hours{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.contact p, .hours p {
+    margin-top: -10px;
+    font-weight: 540;
+}
+
+.contact {
+    width: 300px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.hours {
+    width: 290px;
+    text-align: center;
+    padding-top: 40px;
+    border-left: 2px solid #654321;
+}
+
+.location {
+    width: 700px;
+    height: 360px;
+}
+
+#btn-contact-hours {
+    height: 45px;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(227, 227, 204);
+    margin-bottom: 60px;
+}
+
+.hours button {
+    margin-top: 24px;
+}
+
+.hours h1, .contact h1 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
