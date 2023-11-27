@@ -458,6 +458,116 @@ input[type="submit"]:hover {
     font-size: 40px;
 }
 
+@media (max-width: 600px) {
+    header {
+        height: 50px;
+    }    
+
+    .waltz-nav {
+        font-size: 25px;
+    }
+
+    .left-rose {
+        width: 25px;
+        height: 40px;
+        padding-left: 5px;
+    }
+
+    .info {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    
+    .general-directories {
+        margin-left: 3%;
+    }
+    
+    nav ul {
+        float: right; /*to bring icon links to the top so that it's inline with header */
+        list-style: none; /*removes dots beeside list elements */
+        padding-right: 30px;
+    }
+
+    nav li {
+        padding-left: 15px;
+        float: left;
+    }
+
+    .reservation-section { /* container for the background pic of the restaurant and the reservation section */
+        min-height: 470px;
+        background-size: cover;
+    }
+
+    .reservation-btn-container { /* main container that contains the reservation button */
+        top: 180px;
+    }
+
+    .reservation-form {
+        top: 190px;
+        left: 22%;
+    }
+
+    .contact-hours{
+        width: 450px;
+    }
+
+    .contact {
+        width: 190px;
+        text-align: center;
+        padding-top: 10px;
+        margin-right: 24px;
+    }
+
+    .hours {
+        width: 200px;
+        padding-top: 10px;
+        padding-left: 27px;
+        border-left: 2px solid #654321;
+    }
+
+    .hours button {
+        margin-top: 6px;
+    }
+
+    .alcohol-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        column-gap: 90px;
+        width: auto;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 65px;
+    }
+
+    .menu {
+        padding-bottom: 60px;
+    }
+
+    .menu-tabs {
+        column-gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .menu-tabs button {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .starters-menu, .mains-menu {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .dessert-menu{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
 
 
 
