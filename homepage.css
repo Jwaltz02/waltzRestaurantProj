@@ -6,7 +6,7 @@
     font-size: 28px;
     text-decoration: none;
     color: black;
-    padding: 7px;
+    padding-top: 10px;
     display: inline-block;
 }
 
@@ -21,10 +21,10 @@ label a:hover {
 }
 
 .left-rose {
-    width: 35px;
+    width: 50px;
     height: 50px;
     padding-top: 4px;
-    padding-left: 20px;
+    padding-left: 10px;
     float: left; /* keeping rose logo on left-side of page */
 }
 
@@ -88,10 +88,6 @@ nav ul {
     float: right; /* to bring icon links to the top so that it's inline with header */
     list-style: none; /* removes dots beeside list elements */
     padding-right: 30px;
-}
-
-#order-online {
-    display: none;
 }
 
 header {
@@ -496,6 +492,10 @@ input[type="submit"]:hover {
     nav li {
         padding-left: 15px;
         float: left;
+    }
+
+    #order-online {
+    display: none;
     }
 
     .reservation-section { /* container for the background pic of the restaurant and the reservation section */
