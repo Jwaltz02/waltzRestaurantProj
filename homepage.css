@@ -521,13 +521,14 @@ input[type="submit"]:hover {
         width: 40%;
         text-align: center;
         padding-top: 10px;
-        margin-right: 35px;
+        padding-left: 10px;
+        margin-right: 10px;
     }
 
     .hours {
         width: 40%;
         padding-top: 10px;
-        padding-left: 40px;
+        padding-left: 20px;
         border-left: 2px solid #654321;
     }
 
