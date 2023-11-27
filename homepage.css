@@ -469,7 +469,7 @@ input[type="submit"]:hover {
     }
 
     .left-rose {
-        width: 25px;
+        width: 40px;
         height: 40px;
         padding-left: 5px;
     }
@@ -512,15 +512,17 @@ input[type="submit"]:hover {
         width: 450px;
     }
 
+    .contact-h
+
     .contact {
-        width: 190px;
+        width: 170px;
         text-align: center;
         padding-top: 10px;
         margin-right: 24px;
     }
 
     .hours {
-        width: 200px;
+        width: 130px;
         padding-top: 10px;
         padding-left: 27px;
         border-left: 2px solid #654321;
@@ -528,6 +530,26 @@ input[type="submit"]:hover {
 
     .hours button {
         margin-top: 6px;
+    }
+
+    .contact-hours p {
+        font-size: 15px;
+    }
+
+    .contact-hours h1 {
+        font-size: 35px;
+    }
+
+    .contact-hours button {
+        font-size: 12px;
+    }
+
+    .contact-hours button {
+        font-size: 12px;
+    }
+
+    #btn-contact-hours {
+        color: black;
     }
 
     .alcohol-menu {
@@ -540,6 +562,11 @@ input[type="submit"]:hover {
         margin-left: 50px;
         margin-right: 50px;
         margin-bottom: 65px;
+    }
+
+    .non-alcoholic-menu {
+        margin-right: 50px;
+        margin-left: 50px;
     }
 
     .menu {
@@ -556,6 +583,7 @@ input[type="submit"]:hover {
         margin-top: 20px;
         margin-left: 15px;
         margin-right: 15px;
+        color: black;
     }
 
     .starters-menu, .mains-menu {
