@@ -90,6 +90,10 @@ nav ul {
     padding-right: 30px;
 }
 
+#order-online {
+    display: none;
+}
+
 header {
     background-color: rgb(227, 227, 204);
     height: 50px;
