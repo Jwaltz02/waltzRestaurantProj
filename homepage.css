@@ -514,16 +514,16 @@ input[type="submit"]:hover {
     }
 
     .contact {
-        width: 145px;
+        width: 40%;
         text-align: center;
         padding-top: 10px;
-        margin-right: 30px;
+        margin-right: 35px;
     }
 
     .hours {
-        width: auto;
+        width: 40%;
         padding-top: 10px;
-        padding-left: 27px;
+        padding-left: 40px;
         border-left: 2px solid #654321;
     }
 
