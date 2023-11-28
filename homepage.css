@@ -2,46 +2,49 @@
 /* Navigation bar of homepage */
 
 .waltz-nav {
-    font-family: cursive;
+    font-family: 'Satisfy', cursive;
     font-size: 28px;
     text-decoration: none;
     color: black;
-    padding-top: 10px;
-    display: inline-block;
+    margin-top: 10px;
+    height: 60px;
 }
 
-label a {
+.title-and-logo {
+    width: 150px;
+    display: flex;
+}
+
+.general-directories {
+    width: auto;
+}
+
+.general-directories a {
     color: black;
     text-decoration: underline black;
 }
 
-label a:hover {
-    height: 32px;
+.general-directories a:hover {
     color: rgb(141, 96, 12);
 }
 
+.general-directories-wrap {
+    display: flex;
+    margin-top: 22px;
+}
+
+.general-directories-wrap a {
+    padding-right: 50px;
+}
+
+.media-box {
+    width: 150px;
+}
+
 .left-rose {
-    width: 50px;
+    width: 55px;
     height: 50px;
-    padding-top: 4px;
-    padding-left: 10px;
-    float: left; /* keeping rose logo on left-side of page */
-}
-
-.info {
-    padding-left: 50px;
-}
-
-.general-directories {
-    margin-left: 18%;
-}
-
-.right-rose {
-    width: 40px;
-    height: 50px;
-    padding-top: 4px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    margin-top: 3px;
 }
 
 #instagram {
@@ -58,7 +61,6 @@ label a:hover {
 #twitter {
     width: 20px;
     height: 20px;
-    display: block;
     padding-top: 3px;
 }
 
@@ -70,7 +72,6 @@ label a:hover {
 #facebook {
     width: 24px;
     height: 24px;
-    display: block;
     padding-top: 1px;
 }
 
@@ -80,14 +81,14 @@ label a:hover {
 }
 
 nav li {
-    padding-left: 15px;
-    float: left;
+    margin-top: 3px;
+    padding-right: 15px;
 }
 
 nav ul {
-    float: right; /* to bring icon links to the top so that it's inline with header */
     list-style: none; /* removes dots beeside list elements */
-    padding-right: 30px;
+    display: flex;
+    margin-left: -18px;
 }
 
 header {
@@ -97,9 +98,38 @@ header {
     padding-bottom: 7px;
     overflow: hidden; /* Ensures nav elements dont appear on another line when window shrinks */
     position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0; /* Position the navbar at the top of the page  */
     width: 100%; /* Full width */
     z-index: 1; /* Placing header above all content and fixed to the top of page */
+}
+
+.dropdownMenuButton div {
+    width: 17px;
+    height: 2px;
+    margin: 3px 0;
+    color: #000;
+    background-color: black;
+}
+
+.dropdownMenuButton {
+    background-color: #e3e3cc;
+    border-radius: 3px;
+    width: 25px;
+    padding-left: 2px;
+    margin-top: -3px;
+    display: none;
+}
+
+.dropdownMenuButton:hover {
+    border-color: rgb(115, 95, 63)
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100px;
 }
 
 /* 2 */
@@ -458,14 +488,86 @@ input[type="submit"]:hover {
     font-size: 40px;
 }
 
-@media (max-width: 600px) {
-    header {
-        height: 50px;
-    }    
-
+@media (max-width: 800px) {
     .waltz-nav {
         font-family: 'Satisfy', cursive;
         font-size: 25px;
+        height: 40px;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    .title-and-logo {
+        width: 120px;
+    }
+
+    .left-rose {
+        width: 40px;
+        height: 40px;
+    }
+
+    .general-directories-wrap a {
+        margin-top: -2px;
+        font-size: 15px;
+        margin-right: -25px;
+    }
+
+    nav li {
+        margin-top: 0;
+        padding-right: 3px;
+    }
+
+    nav ul {
+        margin-left: -40px;
+    }
+   
+    .media-box {
+        width: 90px;
+        padding-right: 12px;
+    }
+
+    .dropdownMenuButton {
+        width: 20px;
+        padding-left: 2px;
+        padding-right: 17px;
+        height: 23px;
+    }
+
+    .dropdownMenuButton div {
+        margin-top: -3px;
+        width: 15px;
+        height: 2px;
+        margin: 3px 0;
+        color: #000;
+        background-color: black;
+    }
+
+    .reservation-section { /* container for the background pic of the restaurant and the reservation section */
+        margin-top: 47px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .waltz-nav {
+        font-family: 'Satisfy', cursive;
+        font-size: 25px;
+        height: 40px;
+    }
+
+    header {
+        background-color: rgb(227, 227, 204);
+        height: 40px;
+    }
+
+    .title-and-logo {
+        width: 120px;
+    }
+
+    .reservation-section { /* container for the background pic of the restaurant and the reservation section */
+        margin-top: 45px; /* Image is placed below header */
     }
 
     .left-rose {
@@ -473,29 +575,25 @@ input[type="submit"]:hover {
         height: 40px;
         padding-left: 5px;
     }
-
-    .info {
-        padding-left: 15px;
-        font-size: 14px;
-    }
-    
-    .general-directories {
-        margin-left: 3%;
-    }
     
     nav ul {
-        float: right; /*to bring icon links to the top so that it's inline with header */
-        list-style: none; /*removes dots beeside list elements */
         padding-right: 30px;
     }
 
     nav li {
         padding-left: 15px;
-        float: left;
     }
 
-    #order-online {
-    display: none;
+    .dropdownMenuButton {
+        display:block;
+    }
+
+    .media-box {
+        display: none;
+    }
+
+    .dropdownMenuBox {
+        margin-right: 10px;
     }
 
     .reservation-section { /* container for the background pic of the restaurant and the reservation section */
@@ -508,13 +606,29 @@ input[type="submit"]:hover {
     }
 
     .reservation-form {
-        top: 190px;
-        left: 22%;
+        margin-top: -130px;
+        margin-left: -8%;
     }
 
     .contact-hours{
         width: auto;
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    .contact-hours p {
+        font-size: 15px;
+    }
+
+    .contact-hours h1 {
+        font-size: 35px;
+    }
+
+    .contact-hours button {
+        font-size: 12px;
+    }
+
+    #btn-contact-hours {
+        color: black;
     }
 
     .contact {
@@ -534,26 +648,6 @@ input[type="submit"]:hover {
 
     .hours button {
         margin-top: 6px;
-    }
-
-    .contact-hours p {
-        font-size: 15px;
-    }
-
-    .contact-hours h1 {
-        font-size: 35px;
-    }
-
-    .contact-hours button {
-        font-size: 12px;
-    }
-
-    .contact-hours button {
-        font-size: 12px;
-    }
-
-    #btn-contact-hours {
-        color: black;
     }
 
     .alcohol-menu {
@@ -599,9 +693,50 @@ input[type="submit"]:hover {
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    .reservation-form {
+        top: 330px;
+        left: 30%;
+        width: 57%;
+    }
 }
 
+@media (max-width: 515px) {
+    .dropdownMenuBox {
+        margin-right: 10px;
+    }
 
+    #order-online {
+        display: none;
+    }
+    
+    #reservation {
+        font-size: 13px;
+        width: 90px;
+        min-height: 35px;
+    }
+    
+    input[type="date"] {
+        font-size: 13px;
+        width: 90px;
+    }
+    
+    input[type="time"] {
+        font-size: 13px;
+        width: 90px;
+    }
+    
+    input[type="submit"] {
+        font-size: 13px;
+        width: 90px;
+    }
+
+    .reservation-form {
+        top: 330px;
+        left: 37%;
+        width: 57%;
+    }
+}
 
 
 
