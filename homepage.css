@@ -247,6 +247,9 @@ input[type="submit"]:hover {
 
 label[for="reservation"] select, label[for="reservation"] input, label[for="reservation"] button {
     background-color: rgb(227, 227, 204);
+}
+
+#reservation, input[type="date"], input[type="time"], input[type="submit"], .reservation_close {
     color: black;
 }
 
