@@ -3,6 +3,7 @@ alcohol_menu.style.display = 'none';
 non_alcoholic_menu.style.display = 'none';
 beverage_menu.style.display = 'none';
 reservation_form.style.display = 'none';
+dropdown_content.style.display = 'none';
 
 var btn_food = document.getElementById("btn_food");
 var btn_dessert = document.getElementById("btn_dessert");
@@ -49,4 +50,9 @@ function reserve_close(){
     reservation_form.style.display = 'none';
     reserve_btn_container.style.display = 'block';
     reservation_close.event.preventDefault();
+}
+
+dropdownMenuButton.addEventListener('click', dropdownButtonClick)
+function dropdownButtonClick(){
+    dropdown_content.style.display = 'block';
 }
