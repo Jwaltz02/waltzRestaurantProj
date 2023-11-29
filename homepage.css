@@ -637,7 +637,11 @@ input[type="submit"]:hover {
     }
 
     .dropdownMenuButton {
-    display: block;
+        display: block;
+    }
+
+    .dropdown-content ul {
+        display: block;
     }
 
     .reservation-section { /* container for the background pic of the restaurant and the reservation section */
