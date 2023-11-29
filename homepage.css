@@ -121,7 +121,7 @@ header {
 }
 
 .dropdownMenuButton:hover {
-    border-color: rgb(115, 95, 63)
+    border-color: rgb(115, 95, 63);
 }
 
 .nav-bar {
@@ -216,6 +216,8 @@ input[type="date"] {
     border-radius: 10px;
     width: 118px;
     text-align: center;
+    border-color: black;
+    border-width: 2px;
 }
 
 input[type="time"] {
@@ -224,6 +226,8 @@ input[type="time"] {
     font-family:'Times New Roman', Times, serif;
     border-radius: 10px;
     width: 115px;
+    border-color: black;
+    border-width: 2px;
 }
 
 input[type="submit"] {
