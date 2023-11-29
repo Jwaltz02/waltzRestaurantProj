@@ -155,7 +155,7 @@ header {
     padding-left: 3px;
 }
 
-.dropdownMenu > .dropdownMenuButton:active + .dropdown-content {
+.dropdownMenu > .dropdownMenuButton:focus + .dropdown-content {
     opacity: 1;
 }
 
@@ -637,10 +637,6 @@ input[type="submit"]:hover {
     }
 
     .dropdownMenuButton {
-        display: block;
-    }
-
-    .dropdown-content ul {
         display: block;
     }
 
