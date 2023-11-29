@@ -52,7 +52,7 @@ function reserve_close(){
     reservation_close.event.preventDefault();
 }
 
-dropdownMenuButton.addEventListener('click', dropdownButtonClick)
+dropdownMenuButton.addEventListener('click', dropdownButtonClick);
 function dropdownButtonClick(){
     dropdown_content.style.display = 'block';
 }
