@@ -155,7 +155,7 @@ header {
     padding-left: 3px;
 }
 
-.dropdownMenu > .dropdownMenuButton:focus + .dropdown-content {
+.dropdownMenu > .dropdownMenuButton:active + .dropdown-content {
     opacity: 1;
 }
 
