@@ -152,15 +152,6 @@ header {
     padding-left: 3px;
 }
 
-.dropdown-content {
-    display: none;
-    transition: display 0.5s;
-}
-
-.dropdown-content.open-menu {
-    display: block;
-}
-
 /* 2 */
 /* For the background pic (restaurant dining area), the button for the reservation and the form that appears after the reservation button is clicked */
 
@@ -638,6 +629,21 @@ input[type="submit"]:hover {
         margin-left: -45px;
     }
 
+    #instagram {
+        width: 38px;
+        height: 30px;
+    }
+    
+    #twitter {
+        width: 25px;
+        height: 25px;
+    }
+    
+    #facebook {
+        width: 30px;
+        height: 29px;
+    }
+
     .reservation-section { /* container for the background pic of the restaurant and the reservation section */
         min-height: 470px;
         background-size: cover;
@@ -744,6 +750,12 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 515px) {
+
+    .general-directories {
+        width: 290px;
+        margin-right: -32px;
+    }
+
     .dropdownMenuBox {
         margin-right: 10px;
     }
@@ -778,6 +790,15 @@ input[type="submit"]:hover {
         top: 330px;
         left: 37%;
         width: 57%;
+    }
+
+    .dropdown-content {
+    display: none;
+    transition: display 0.5s;
+    }
+
+.dropdown-content.open-menu {
+    display: block;
     }
 }
 
