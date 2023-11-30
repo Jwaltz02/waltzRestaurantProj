@@ -772,7 +772,7 @@ input[type="submit"]:hover {
     }
 
     .special-box {
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     label[for="reservation"] {
