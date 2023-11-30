@@ -51,8 +51,3 @@ function reserve_close(){
     reserve_btn_container.style.display = 'block';
     reservation_close.event.preventDefault();
 }
-
-dropdownMenuButton.addEventListener('click', dropdownButtonClick);
-function dropdownButtonClick(){
-    dropdown_content.style.display = 'block';
-}
