@@ -709,6 +709,7 @@ input[type="submit"]:hover {
 
     .menu-tabs button {
         color: black;
+        width: 120px;
     }
 
    .starters-menu, .mains-menu {
