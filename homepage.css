@@ -751,54 +751,44 @@ input[type="submit"]:hover {
         margin-right: 50px;
     }
 
-    .reservation-form {
-        top: 330px;
-        left: 30%;
-        width: 57%;
+    label[for="reservation"] {
+        margin-top: -190px;
     }
 
     #reservation {
         font-size: 13px;
-        width: 80px;
+        width: 6em;
         height: 43px;
         margin-top: 2px;
     }
     
     input[type="date"] {
         font-size: 13px;
-        width: 53px;
-        height: 16px;
+        width: 6em;
         margin-top: 2px;
     }
     
     input[type="time"] {
         font-size: 13px;
-        width: 56px;
-        height: 18px;
+        width: 6em;
         margin-top: 2.5px;
     }
     
     input[type="submit"] {
         font-size: 13px;
-        width: 80px;
+        width: 6em;
     }
 
     .reservation-form {
         left: 50%;
-        width: 35%;
-    }
-
-    label[for="reservation"] {
-        display: flex;
-        flex-direction: column;
-        margin-top: -190px;
+        width: 20%;
     }
 
     .reservation-close {
-        margin-left: 25px;
+        margin-left: 15px; 
         height: 25px;
-        width: 25px;
-    }
+        width: 50px;
+    } 
 }
 
 @media (max-width: 515px) {
