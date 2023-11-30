@@ -50,3 +50,8 @@ function reserve_close(){
     reserve_btn_container.style.display = 'block';
     reservation_close.event.preventDefault();
 }
+
+let dropdown_content = document.getElementById("dropdown_content");
+function toggleMenu(){
+    dropdown_content.classList.toggle("open-menu");
+}
