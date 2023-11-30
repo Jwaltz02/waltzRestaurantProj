@@ -144,12 +144,16 @@ header {
     margin-left: -40px;
 }
 
+.dropdown-content li:nth-child(1){
+    margin-left: -47px;
+}
+
 .dropdown-content li:nth-child(2){
-    padding-left: 5px;
+    padding-left: 4px;
 }
 
 .dropdown-content li:nth-child(3){
-    padding-left: 3px;
+    margin-left: -43px;
 }
 
 /* 2 */
