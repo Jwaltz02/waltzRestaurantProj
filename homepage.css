@@ -311,6 +311,11 @@ input[type="submit"]:hover {
     box-shadow: inset 50vw 0 0 0 rgb(231, 116, 16);
 }
 
+#contactHours {
+    margin-top: -47px;
+    position: absolute;
+}
+
     /* For the menu background pic, and the div containers that hold the menu items */
 
 .menu {
