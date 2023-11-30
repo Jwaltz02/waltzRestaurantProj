@@ -369,11 +369,11 @@ input[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;
     column-gap: 60px;
-    width: auto;
+    width: 305px;
     height: auto;
     padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 55px;
+    margin-right: 60px;
 }
 
 .dessert-menu h1 {
@@ -385,11 +385,11 @@ input[type="submit"]:hover {
 }
 
 .dessert-list-LS {
-    width: 350px;
+    width: 250px;
 }
 
 .dessert-list-RS {
-    width: 350px;
+    width: 250px;
     padding-top: 50px;
 }
 
