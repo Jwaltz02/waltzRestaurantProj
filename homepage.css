@@ -31,10 +31,7 @@
 .general-directories-wrap {
     display: flex;
     margin-top: 22px;
-}
-
-.general-directories-wrap a {
-    padding-right: 50px;
+    column-gap: 60px;
 }
 
 .media-box {
