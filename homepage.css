@@ -155,10 +155,6 @@ header {
     padding-left: 3px;
 }
 
-.dropdownMenu:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown-content {
     display: none;
     transition: display 0.5s;
