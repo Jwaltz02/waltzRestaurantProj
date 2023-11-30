@@ -707,6 +707,14 @@ input[type="submit"]:hover {
         margin-top: 6px;
     }
 
+    .menu-tabs button {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: black;
+    }
+
    .starters-menu, .mains-menu {
         margin-left: 70px;
         margin-right: 70px;
