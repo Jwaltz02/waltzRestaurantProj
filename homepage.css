@@ -159,6 +159,15 @@ header {
     display: block;
 }
 
+.dropdown-content {
+    display: none;
+    transition: display 0.5s;
+}
+
+.dropdown-content.open-menu {
+    display: block;
+}
+
 /* 2 */
 /* For the background pic (restaurant dining area), the button for the reservation and the form that appears after the reservation button is clicked */
 
