@@ -800,6 +800,10 @@ input[type="submit"]:hover {
         margin-left: 5px;
         padding: 0;
     }
+
+    label[for="reservation"] input:nth-child(4) {
+        background-color: rgb(225, 96, 22);
+    }
 }
 
 @media (max-width: 515px) {
