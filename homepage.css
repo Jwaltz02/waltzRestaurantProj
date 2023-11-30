@@ -713,7 +713,7 @@ input[type="submit"]:hover {
     }
 
     .dessert-menu{
-        width: 292px;
+        width: 270px;
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -729,30 +729,26 @@ input[type="submit"]:hover {
     .alcohol-menu {
         margin-left: 50px;
         margin-right: 50px;
+        width: 242px;
     }
 
     .non-alcoholic-menu {
+        width: 270px;
         margin-right: 50px;
         margin-left: 50px;
     }
-
-    .alcohol-menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        column-gap: 90px;
-        width: 292px;
-        height: auto;
-        margin-bottom: 65px;
-    }
     
     .beverage-list-LS {
-        width: 290px;
+        width: auto;
         padding-left: 30px;
     }
     
     .beverage-item-descrip-LS, .beverage-item-descrip-RS {
         margin-top: -15px;
+    }
+
+    .beverage-item-descrip-RS {
+        width: 250px;
     }
     
     .alc-list-LS {
@@ -761,12 +757,14 @@ input[type="submit"]:hover {
     }
 
     .beverage-list-RS {
-        margin-left: 10px;
-        width: auto;
+        width: 230px;
+        margin-right: 10px;
     }
 
     .beer-box {
-        width: 265px;
+        width: 245px;
+        padding: 10px;
+        margin-left: -15px;
     }
 
     .special-box {
