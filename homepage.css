@@ -136,6 +136,7 @@ header {
     position: fixed;
     margin-top: -7px;
     width: 30px;
+    display: none;
 }
 
 .dropdown-content ul {
@@ -152,6 +153,10 @@ header {
 
 .dropdown-content li:nth-child(3){
     padding-left: 3px;
+}
+
+.dropdownMenu:hover .dropdown-content {
+    display: block;
 }
 
 /* 2 */
