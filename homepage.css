@@ -707,16 +707,28 @@ input[type="submit"]:hover {
         margin-top: 6px;
     }
 
-    .alcohol-menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        column-gap: 90px;
-        width: auto;
-        height: auto;
+   .starters-menu, .mains-menu {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .dessert-menu{
+        width: 292px;
         margin-left: 50px;
         margin-right: 50px;
-        margin-bottom: 65px;
+    }
+
+    .dessert-list-LS {
+        width: auto;
+    }
+
+    .dessert-list-RS {
+        width: auto;
+    } 
+
+    .alcohol-menu {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .non-alcoholic-menu {
@@ -724,31 +736,41 @@ input[type="submit"]:hover {
         margin-left: 50px;
     }
 
-    .menu {
-        padding-bottom: 60px;
-    }
-
-    .menu-tabs {
-        column-gap: 0;
+    .alcohol-menu {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
+        column-gap: 90px;
+        width: 292px;
+        height: auto;
+        margin-bottom: 65px;
+    }
+    
+    .beverage-list-LS {
+        width: 290px;
+        padding-left: 30px;
+    }
+    
+    .beverage-item-descrip-LS, .beverage-item-descrip-RS {
+        margin-top: -15px;
+    }
+    
+    .alc-list-LS {
+        width: auto;
+        height: auto;
     }
 
-    .menu-tabs button {
-        margin-bottom: 20px;
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-        color: black;
+    .beverage-list-RS {
+        margin-left: 10px;
+        width: auto;
     }
 
-    .starters-menu, .mains-menu {
-        margin-left: 70px;
-        margin-right: 70px;
+    .beer-box {
+        width: 265px;
     }
 
-    .dessert-menu{
-        margin-left: 50px;
-        margin-right: 50px;
+    .special-box {
+        padding-bottom: 20px;
     }
 
     label[for="reservation"] {
