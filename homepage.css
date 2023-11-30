@@ -707,12 +707,15 @@ input[type="submit"]:hover {
         margin-top: 6px;
     }
 
-    .menu-tabs button {
-        color: black;
-        width: 120px;
+    .menu-tabs {
+        justify-content: space-around;
     }
 
-   .starters-menu, .mains-menu {
+    .menu-tabs button {
+        color: black;
+    }
+
+    .starters-menu, .mains-menu {
         margin-left: 70px;
         margin-right: 70px;
     }
