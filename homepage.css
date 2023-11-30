@@ -757,26 +757,30 @@ input[type="submit"]:hover {
 
     #reservation {
         font-size: 13px;
-        width: 8em;
-        height: 43px;
-        margin-top: 2px;
+        width: 6em;
+        margin: 0;
+        padding: 0;
     }
     
     input[type="date"] {
         font-size: 13px;
         width: 6em;
-        margin-top: 2px;
+        margin: 0;
+        padding: 0;
     }
     
     input[type="time"] {
         font-size: 13px;
         width: 6em;
-        margin-top: 2.5px;
+        margin: 0;
+        padding: 0;
     }
     
     input[type="submit"] {
         font-size: 13px;
-        width: 8em;
+        width: 6em;
+        margin: 0;
+        padding: 0;
     }
 
     .reservation-form {
