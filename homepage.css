@@ -701,9 +701,11 @@ input[type="submit"]:hover {
 
     .reservation-form {
         margin-top: -130px;
-        margin-left: -8%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%,0);
     }
-
+    
     .reservation-close {
         width: 4em;
         text-align: center;
