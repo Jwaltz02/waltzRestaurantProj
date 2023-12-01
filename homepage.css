@@ -662,9 +662,69 @@ input[type="submit"]:hover {
         top: 180px;
     }
 
+    label[for="reservation"] {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #reservation {
+        height: 2.5em;
+        font-size: 15px;
+        width: 6em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    input[type="date"] {
+        font-size: 15px;
+        width: 5.5em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    input[type="time"] {
+        font-size: 15px;
+        width: 5.5em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    input[type="submit"] {
+        font-size: 15px;
+        width: 13em;
+        margin: 0;
+        padding: 0;
+        height: 2.5em;
+        background-color: rgb(227, 227, 204);
+    }
+
     .reservation-form {
         margin-top: -130px;
-        margin-left: -8%;
+        width: 100%;
+        left: 58%;
+        transform: translate(-50%,0);
+    }
+
+    .reservation-close {
+        width: 4em;
+        text-align: center;
+        margin-top: 6px;
+        margin-left: 5px;
+        padding: 0;
+    }
+
+    label[for="reservation"] input:nth-child(4) {
+        background-color: rgb(225, 96, 22);
+    }
+
+    .dropdown-content {
+        display: none;
+        transition: display 0.5s;
+    }
+
+    .dropdown-content.open-menu {
+        display: block;
     }
 
     .contact-hours{
@@ -778,61 +838,6 @@ input[type="submit"]:hover {
     .special-box {
         padding-bottom: 50px;
     }
-
-    label[for="reservation"] {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    #reservation {
-        height: 2.5em;
-        font-size: 15px;
-        width: 6em;
-        margin: 0;
-        padding: 0;
-    }
-    
-    input[type="date"] {
-        font-size: 15px;
-        width: 5.5em;
-        margin: 0;
-        padding: 0;
-    }
-    
-    input[type="time"] {
-        font-size: 15px;
-        width: 5.5em;
-        margin: 0;
-        padding: 0;
-    }
-    
-    input[type="submit"] {
-        font-size: 15px;
-        width: 13em;
-        margin: 0;
-        padding: 0;
-        height: 2.5em;
-        background-color: rgb(227, 227, 204);
-    }
-
-    .reservation-form {
-        width: 100%;
-        left: 58%;
-        transform: translate(-50%,0);
-    }
-
-    .reservation-close {
-        width: 4em;
-        text-align: center;
-        margin-top: 6px;
-        margin-left: 5px;
-        padding: 0;
-    }
-
-    label[for="reservation"] input:nth-child(4) {
-        background-color: rgb(225, 96, 22);
-    }
 }
 
 @media (max-width: 515px) {
@@ -848,15 +853,6 @@ input[type="submit"]:hover {
 
     #order-online {
         display: none;
-    }
-
-    .dropdown-content {
-        display: none;
-        transition: display 0.5s;
-    }
-
-    .dropdown-content.open-menu {
-        display: block;
     }
 }
 
